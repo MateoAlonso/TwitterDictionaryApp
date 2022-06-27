@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Diccionario</title>
+
+  </head>
+  <body>
+    <h1 class="ml-3">Diccionario EN-EN</h1>
+
+    <form class="form-inline ml-3 mt-3">
+      <input id = "bearerToken" class="form-control mr-2" type="password" placeholder="BearerToken">
+      <button id = "btnToken" class="btn btn-outline-success my-2 my-sm-0" type="button">Update</button>
+    </form>
+
+    <form class="form-inline ml-3 mt-3">
+      <input id = "inputSearch" class="form-control mr-2" type="text" placeholder="Search">
+      <button id = "btnSearch" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+    </form>
+
+    
+    <h3 id="diccContentTitle" class="text-center mt-3"></h3>
+    <ul id="diccContent" class="list-group"></ul>
+    
+
+    
+    <h3 id="twitterContentTitle" class="text-center"></h3>
+    <ul id="twitterContent" class="list-group"></ul>
+    
+
+    <script src="render.js"></script>
+  </body>
+</html>
